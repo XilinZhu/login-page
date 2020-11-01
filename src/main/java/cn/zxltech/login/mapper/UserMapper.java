@@ -17,7 +17,7 @@ public interface UserMapper {
      * @param username
      * @return
      */
-    @Select(value = "select u.username,u.password from user u where u.username=#{username}")
+    @Select(value = "select user.username,user.password from user where user.username=#{username}")
     User findUserByName(String username);
 
     /**

@@ -19,7 +19,7 @@ public class UserController {
     /**
      * 注册
      * @param user 参数封装
-     * @return Result
+     * @return result 返回前端的信息
      */
     @PostMapping(value = "/regist")
     public Result regist(User user){
@@ -29,11 +29,12 @@ public class UserController {
     /**
      * 登录
      * @param user 参数封装
-     * @return Result
+     * @return result 返回前端的信息
      */
     @PostMapping(value = "/login")
     public Result login(User user){
         return userService.login(user);
     }
 }
+
 

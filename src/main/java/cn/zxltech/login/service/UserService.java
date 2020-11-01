@@ -2,14 +2,12 @@ package cn.zxltech.login.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import cn.zxltech.login.bean.Result;
 import cn.zxltech.login.bean.User;
 import cn.zxltech.login.mapper.UserMapper;
 
 @Service
-@Transactional(rollbackFor = RuntimeException.class)
 public class UserService {
 
     @Autowired
@@ -17,7 +15,7 @@ public class UserService {
     /**
      * 注册
      * @param user 参数封装
-     * @return Result
+     * @return result 返回前端的信息
      */
     public Result regist(User user) {
         Result result = new Result();
@@ -31,7 +29,7 @@ public class UserService {
 
             }else{
                 userMapper.regist(user);
-                //System.out.println(user.getId());
+                System.out.println(user.getId());
                 result.setMsg("注册成功");
                 result.setSuccess(true);
                 result.setDetail(user);
