@@ -1,4 +1,4 @@
-package cn.zxltech.login.checkcode;
+package cn.zxltech.login.controller;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
@@ -19,6 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import cn.zxltech.login.service.UserService;
 import cn.zxltech.login.bean.User;
+import cn.zxltech.login.checkcode.GetImage;
 
 
 @Controller
