@@ -79,7 +79,11 @@ A login page based on Spring boot and MyBatis. The check code function is based 
 
 ### 注册页面
 
-<img src="https://i.loli.net/2020/11/01/nNRWvJFI5PXcTAl.png" style="zoom:50%;" />
+- 通过主界面的“注册”按钮重定向到注册页面 `regist.html`
+
+  <img src="https://i.loli.net/2020/11/01/nNRWvJFI5PXcTAl.png" style="zoom:50%;" />
+
+
 
 ## 关于整合 MyBatis 框架
 
