@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+<meta charset="UTF-8">
+<title>regist</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+body {
+    padding: 10px;
+}
+#inputtext {
+    width: 100%;
+}
+#regist{
+    width: 300px;
+    margin:0px auto;
+    padding-top: 60px;
+}
+#butt{
+    width: 60%;
+}
+</style>
+</head>
+
+<body>
+    <div id="regist">
+        <form action="/user/regist" method="post"> <!-- action指定了表单数据发向何处 -->
+            <h2 align="center">R E G I S T</h2><br/>
+
+            <!-- form-control:宽度为100%，设置边框为浅灰色，控件具有4px的圆角，设置阴影效果，元素得到焦点时，阴影和边框效果会发生变化,设置placeholder的颜色为#999 -->
+            <input type="text" name="username" class="form-control" id="inputtext" required autofocus placeholder="用户名"/><br/>
+            <input type="password" name="password" class="form-control" id="inputtext" required placeholder="密  码"/><br/>
+            
+            <!-- class="btn btn-success"使用了Bootstrap默认的“成功绿” -->
+            <div style="width: 100%;text-align: center;"><input type="submit" value="注 册" id="butt" class="btn btn-success" /></div>
+        </form>
+    </div>
+</body>
+</html>
